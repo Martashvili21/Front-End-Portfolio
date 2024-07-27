@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WineBar - Booking Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bg1">
+        <div class="bgimg">
+            <div class="shida">
+                <h1>Book a table</h1>
+                <div class="time">
+                    <div class="date">
+                        <h2>Choose Day</h2>
+                        <div class="wre">
+                            <i class="fa-solid fa-plus" id="calbut"></i>
+                            <i class="fa-solid fa-minus" id="minusbut"></i>
+                        </div>
+                        <div class="calendar" id="cal">
+                            <header>
+                                <h3 id="yearss"></h3>
+                                <nav>
+                                <button id="prev"></button>
+                                <button id="next"></button>
+                                </nav>
+                            </header>
+                            <section>
+                                <ul class="days" id="days">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                                </ul>
+                                <ul class="dates" id="dates"></ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="clock">
+                        <h1>Choose Time</h1>
+                        <input type="time" id="saati">
+                    </div>
+                </div>
+                <div class="txt">
+                    <p id="erorpep">People</p>
+                    <p id="erortab">Table</p>
+                </div>
+                <div class="oden">
+                    <div class="xalxi">
+                        <button id="minuss">−</button>
+                        <input type="number" value="0" id="input"/>
+                        <button id="plus">+</button>
+                    </div>
+                    <div class="mag">
+                        <button id="minusss">−</button>
+                        <input type="number" value="0" id="inputs"/>
+                        <button id="pluss">+</button>
+                    </div>
+                </div>
+                <div class="data">
+                    <span id="emaileror"></span>
+                    <input type="email" placeholder="Enter Your Email" id="email">
+                    <input type="text" placeholder="Enter Your Phone Number" id="number">
+                </div>
+                <button class="bookbtn" id="bookingbtn"><a href="creditcard//index.html">Pay Now</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

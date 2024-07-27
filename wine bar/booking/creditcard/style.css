@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+.bg1 .save {
+    width: 50%;
+    height: 100vh;
+}
+
+.bg1 .pay {
+    width: 40%;
+    height: 200px;
+    margin: 10px auto;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(129, 129, 129);
+}
+
+.bg1 .save .detal {
+    width: 90%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    
+}
+
+.bg1 .save .detal button {
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.bg1 .save .main {
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+    box-shadow: 0 0 25px rgb(129, 129, 129);
+    border-radius: 10px;
+}
+
+.bg1 .save .main h1 {
+    margin: 30px;
+}
+
+.bg1 .save .main .p1 {
+    margin: 30px;
+    color: rgb(145, 145, 145);
+}
+
+.bg1 .save .main .butonebi {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg1 .save .main .butonebi .btn1 {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    font-size: 20px;
+    width: 49%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bg1 .save .main .butonebi .btn2 {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 49%;
+    border: 1px solid rgb(184, 184, 184);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bg1 .save .main h4 {
+    margin: 30px;
+    font-size: 22px;
+}
+
+.bg1 .save .main .book {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin:auto;
+}
+
+
+.bg1 .save .main .book .card {
+    width: 80px;
+    height: 50px;
+}
+
+.bg1 .save .main .name {
+    width: 90%;
+    height: 70px;  
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.bg1 .save .main .name input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bg1 .save .main .number {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    margin: 30px auto;
+    color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.bg1 .save .main .number input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bg1 .save .main .data {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.bg1 .save .main .data .card {
+    width: 47.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg1 .save .main .data .card input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(163, 163, 163);
+    outline: none;
+    padding-left: 10px;
+}
+
+.bg1 .save .main .box {
+    width: 90%;
+    height: 20px;
+    display: flex;
+    margin: 30px auto;
+    color: rgb(90, 90, 90);
+}
+
+.bg1 .save .main .box p {
+    margin-left: 30px;
+}
+
+.bg1 .save .main .mainbtn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 40px;
+    float: right;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.bg1 .pay .txt {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.bg1 .pay .butonebi {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.bg1 .pay .butonebi .btn1 {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(160, 160, 160);
+    background: none;
+    border-radius: 5px;
+}
+
+.bg1 .pay .butonebi .btn2 {
+    width: 150px;
+    height: 100%;
+    background-color: rgb(0, 183, 255);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 840px) {
+    .bg1 {
+        display: block;
+    }
+    
+    .bg1 .save {
+        width: 100%;
+    }
+
+    .bg1 .pay {
+        width: 90%;
+    }
+} 

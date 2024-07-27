@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #f36100;
+    --main-bg-color: #0a0a0a;
+    --second-bg-color: #272626;
+    --second-color: #a9a9a9;
+}
+
+body {
+    background: #151515;;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background: linear-gradient(90deg black);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav .otx {
+    width: 50px;
+    height: 50px;
+    background: #363636;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+nav .otx #icone {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.nav2 {
+    width: 60%;
+    height: 100%;
+}
+
+.nav2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cenc {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: var(--main-color);
+    font-size: 30px;
+    display: none;
+}
+
+.nav2 ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav2 ul li a:hover{
+    color: #f36100;
+    transition: 0.2s;
+}
+
+.nav3 {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ic1 {
+    font-size: 1vw;
+    color: white;
+    cursor: pointer;
+}
+
+.xazi {
+    width: 2px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+.bg1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(image/contactbg1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1 .txt {
+    width: 400px;
+    height: 115px;
+}
+
+.bg1 .txt h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.bg1 .txt p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bg1 .txt p span {
+    color: var(--main-color);
+}
+
+.bg2 {
+    width: 70%;
+    height: 405px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+.item {
+    width: 50%;
+    height: 100%;
+}
+
+.bg2 .item .txt {
+    height: 70px;
+}
+
+.bg2 .item .txt p {
+    color: var(--main-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.bg2 .item .txt h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.bg2 .item .book {
+    height: 285px;
+    width: 100%;
+}
+
+.bg2 .item .book .item {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.bg2 .item .book .item .wre {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #272626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2 .item .book .item .wre #icon {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.bg2 .item .book .item  p {
+    color: #c4c4c4;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.bg2 .item .inp {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 1px solid #363636;
+    text-decoration: none;
+    outline: none;
+    font-size: 13px;
+    color: #c4c4c4;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.bg2 .item .inp ::placeholder {
+    margin-left: 10px;
+}
+
+.bg2 .item .biginp {
+    width: 100%;
+    height: 100px;
+    background: none;
+    border: 1px solid #363636;
+    text-decoration: none;
+    outline: none;
+    font-size: 13px;
+    color: #c4c4c4;
+    padding-left: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bg2 .item .inp:hover {
+    box-shadow: 0 0 15px 5px white;
+}
+
+.bg2 .item .biginp:hover {
+    box-shadow: 0 0 15px 5px white;
+}
+
+.bg2 .item button {
+    width: 100%;
+    height: 50px;
+    background: var(--main-color);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.bg2 .item button:hover {
+    box-shadow: 0 0 15px 7.5px white;
+    scale: 1.05;
+}
+
+.maps {
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.fot1 {
+    width: 100%;
+    height: 150px;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+}
+
+.fot2 {
+    width: 100%;
+    height: 350px;
+    background: black;
+}
+
+.fot1 .center {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot1 .center .item {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fot1 .center .item .wre {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot1 .center .item .wre #icon {
+    color:white;
+    font-size: 30px;
+}
+
+.fot1 .center .item p {
+    color: white;
+    font-size: 12px;
+}
+
+.fot2 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.fot2 .center {
+    width: 60%;
+    height: 100%;
+}
+
+.fot2 .center .zeda {
+    width: 100%;
+    height: 218px;
+    border-bottom: 1px solid #272626;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot2 .center .zeda .bigitem {
+    width: 45%;
+    height: 100%;
+}
+
+.fot2 .center .zeda .item {
+    width: 25%;
+    height: 100%;
+}
+
+.fot2 .center .zeda .bigitem p {
+    font-size: 1vw;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 50px;
+}
+
+.fot2 .center .zeda .item h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.fot2 .center .zeda .item p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 30px;
+}
+
+.fot2 .center .qveda p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.fot2 .center .qveda p span {
+    color: var(--main-color);
+}
+
+@media only screen and (max-width: 890px) {
+    nav img, .nav3 {
+        display: none;
+    }
+
+    nav .nav2 {
+        width: 100%;
+    }
+
+    .bg2 {
+        width: 95%;
+    }
+
+    .maps {
+        width: 95%;
+    }
+
+    footer .fot1 .center {
+        width: 90%;
+        display: block;
+    }
+
+    footer .fot1 .center .item {
+        width: 70%;
+        height: 100px;
+    }
+
+    footer .fot1 .center .item p {
+        font-size: 2.3vw;
+    }
+
+    footer .fot2 .center {
+        width: 90%;
+        margin-top: 300px;
+    }
+
+    footer .fot2 .center .zeda .bigitem p {
+        font-size: 2vw;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 647px) {
+    .bg2 {
+        display: block;
+    }
+
+    .bg2 .item {
+        width: 100%;
+    }
+
+    .bg2 .item .txt {
+        text-align: center;
+    }
+
+    .maps {
+        margin-top: 1000px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    nav img, .nav2, .nav3 {
+        display: none;
+    }
+    nav .otx {
+        visibility: visible;
+    }
+
+    nav .nav2 {
+        display: block;
+        width: 100%;
+        height: 550px;
+        background-color: var(--main-color);
+        color: black;
+        z-index: 1;
+        margin-top: -50px;
+        display: none;
+    }
+
+    nav .nav2 ul li a {
+        color: black;
+    }
+
+    nav .nav2 ul li a:hover {
+        color: black;
+    }
+
+    .cenc {
+        display: block;
+    }
+
+    nav .nav2 ul {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        flex-direction: column;
+    }
+
+    .bg2 {
+        width: 90%;
+        display: block;
+    }
+    .bg2 .item {
+        width: 100%;
+    }
+
+    .bg2 .item .book .item p {
+        font-size: 3vw;
+    }
+
+    .bg2 .item .txt p {
+        font-size: 2vw;
+    }
+
+    .bg2 .item .txt h1 {
+        font-size: 5vw;
+    }
+
+    .maps {
+        margin-top: 500px;
+        width: 90%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer .fot1 .center {
+        width: 90%;
+        display: block;
+    }
+
+    footer .fot1 .center .item {
+        width: 100%;
+    }
+
+    footer .fot1 .center .item p {
+        font-size: 3vw;
+    }
+    
+    footer .fot2 .center {
+        width: 90%;
+        margin-top: 500px;
+    }
+
+    footer .fot2 .center .zeda {
+        display: block;
+    }
+
+    footer .fot2 .center .zeda .bigitem p {
+        font-size: 2vw;
+    }
+
+    footer .fot2 .center .qveda {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (max-width: 291px) {
+    .bg1 .txt {
+        display: none;
+    }
+
+    .bg2 .item .txt h1 {
+        font-size: 20px;
+    }
+
+    .bg2 .item .txt p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #b28e65;
+}
+
+body {
+    background-color: rgb(243, 234, 218);
+}
+
+a {color: white;}
+
+.bg1 {
+    width: 100%;
+    height: 650px;
+    background-image: url(image/eventbg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -50px;
+}
+
+.bg1 .txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.bg1 .txt nav {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    z-index: 5;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.btnbar {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    margin:auto;
+    background-color: var(--main-color);
+    display: none;
+}
+
+.bg1 .txt nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bg1 .txt nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.bg1 .txt nav ul li a:hover {
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.btnx {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid black;
+    display: none;
+}
+
+@media only screen and (max-width: 654px) {
+    .bg1 .txt nav {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .bg1 .txt nav ul {
+        display: none;
+        width: 260px;
+        height: 700px;
+        margin: auto; 
+        background-color: rgba(0, 0, 0, 0.658);  
+    }
+
+    .bg1 .txt nav ul li{
+        margin-top: 50px;
+        font-size: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -35px auto;
+        border-bottom: 1px solid rgb(121, 121, 121);
+    }
+
+    .bg1 .txt nav ul li a {
+        font-size: 17px;
+    }
+
+    .bg1 .txt nav .btnbar {
+        display: block;
+    }
+
+    .btnx {
+        display: none;
+    }
+}
+
+.bg1 .txt .shidatxt {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.bg1 .txt .shidatxt h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.bg1 .txt .shidatxt h1 {
+    font-size: 100px;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.bg1 .txt .shidatxt .xazi {
+    width: 30px;
+    height: 2px;
+    border: 1px solid white;
+    margin: 30px auto;
+}
+
+.bg2 {
+    width: 1200px;
+    height: 1100px;
+    margin: 100px auto;
+}
+
+.bg2 .txt {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.bg2 .txt h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.bg2 .txt .xazi {
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin: 20px auto;
+}
+
+.bg2 .book {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bg2 .book .card {
+    width: 380px;
+    height: 520px;
+}
+
+.bg2 .book .card h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.bg2 .book .card .txt1 {
+    width: 250px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    margin-top: 15px;
+}
+
+.bg2 .book .card .txt1 .xazi {
+    width: 2px;
+    height: 25px;
+    background-color: #929292;
+    align-items: center;
+}
+
+.bg2 .book .card .p1 {
+    color: rgb(131, 131, 131);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.bg2 .book .card a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.bg8 {
+    width: 100%;
+    height: 650px;
+    background-image: url(image/bg8.jpg);
+    background-attachment: fixed;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg8 .blackdiv {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.bg8 .blackdiv .txt {
+    width: 800px;
+    height: 500px;
+    margin: auto auto;
+    text-align: center;
+    color: white;
+}
+
+.bg8 .blackdiv .txt .xazi {
+    width: 50px;
+    height: 3px;
+    border: 2.5px solid white;
+    background-color: white;
+    margin: auto;
+}
+
+.bg8 .blackdiv .txt h1 {
+    font-size: 100px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.bg8 .blackdiv .txt p {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+
+.bg8 .blackdiv .txt .butonebi {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.bg8 .blackdiv .txt .butonebi button {
+    width: 49%;
+    height: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn1 {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+.bg8 .blackdiv .txt .butonebi .btn1:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn2 {
+    background-color: white;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn2 a {
+    color: black;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn2:hover {
+    background-color: var(--main-color);
+    color: black;
+    transition: 0.3s;
+}
+
+
+.bg8 .blackdiv .txt .butonebi .btn2:hover a {
+    color: white;
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    height: 580px;
+    background-image: url(image/footerbg.jpg);
+}
+
+footer .txt {
+    width: 200px;
+    height: 200px;
+    margin: 125px auto;
+    text-align: center;
+    color: rgb(100, 99, 99);
+}
+
+footer .txt p {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+footer .txt .book {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+footer .txt .book .card {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .qveda {
+    width: 100%;
+
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+footer .qveda p {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(139, 139, 139);
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1225px) {
+    .bg2 {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-width: 1170px) {
+    .bg2 {
+        height: 1700px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .bg8 .blackdiv .txt {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+    .bg2 {
+        height: 3500px;
+    }
+
+    .bg2 .book .card {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 552px) {
+    .bg8 .blackdiv .txt h1 {
+        font-size: 15vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .bg1 .txt .shidatxt h1 {
+        font-size: 15vw;
+    }
+
+    .bg2 .book .card .txt1 {
+        width: 95%;
+    }
+
+    .bg2 .book .card .p1 {
+        font-size: 3vw;
+        line-height: 15px;
+    }
+
+    .bg8 .blackdiv .txt .butonebi {
+        width: 100%;
+    }
+}

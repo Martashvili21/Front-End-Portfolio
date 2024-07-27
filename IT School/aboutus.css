@@ -1,0 +1,1184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #0AB99D;
+    --main-text-color: #333931;
+}
+
+a { color: inherit; } 
+
+nav {
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+    position: relative;
+    z-index: 3;
+}
+
+nav .otx {
+    width: 50px;
+    height: 50px;
+    background: #363636;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+nav .otx #icone {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+nav .nav1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+nav .nav1 .book1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav2 .book1 h1 {
+    font-size: 1.5vw;
+}
+
+nav .nav1 .book1 .card {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav1 .book1 .card a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav .nav1 .book1 .card a p {
+    font-size: 15px;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav .nav1 .book1 .card a i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+nav .nav1 .book2 {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav1 .book2 .dropdown {
+    width: 100px;
+    height: 25px;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+nav .nav1 .book2 .dropdown .dropdown1{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    
+}
+
+nav .nav1 .book2 .dropdown .dropdown1 p {
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+nav .nav1 .book2 .dropdown:hover .dropdown1 {
+    display: block;
+    transition: 0.3s;
+}
+
+nav .nav1 .book2 .xazi {
+    width: 1px;
+    height: 75%;
+    background-color: black;
+}
+
+nav .nav1 .book2 .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    align-items: center;
+}
+
+.cenc {
+    width: 100px;
+    height: 100px;
+    border: none;
+    display: none;
+    margin-top: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+}
+
+
+nav .nav1 .book2 .card :hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+nav .nav2 .book1 {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+nav .nav2 .book2 { 
+    width: 900px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav2 .book3 {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav2 .book2 ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+nav .nav2 .book2 ul .dropdown {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+nav .nav2 .book2 ul .dropdown .dropdown1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-top: 390px;
+    background-color: white;
+    display: none;
+    transition: 0.3s;
+}
+
+nav .nav2 .book2 ul .dropdown .dropdown1 p {
+    margin-top: 40px;
+    margin-left: 50px;
+    color: var(--main-color);
+}
+
+nav .nav2 .book2 ul .dropdown:hover .dropdown1 {
+    display: block;
+    border-top: 10px solid var(--main-color);
+    transition: 0.3s;
+}
+
+nav .nav2 .book2 ul a li {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav .nav2 .book2 ul a :hover {
+    scale: 1.1;
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+nav .nav2 .book3 i {
+    color: var(--main-color);
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+nav .nav2 .book3 button {
+    width: 70%;
+    height: 90%;
+    color: white; 
+    background-color: var(--main-color);
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .nav2 .book3 button:hover {
+    background-color: #089981;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.bg1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(image/group.jpg);
+}
+
+.bg1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0e2a46;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.bg1 .txt {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.bg1 .txt h1 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.bg1 .txt p {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.bg1 .txt p span {
+    color: var(--main-color);
+}
+
+.bg2 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg2 .shida {
+    width: 1400px;
+    height: 100%;
+    display: flex;
+}
+
+.bg2 .shida .imgebi {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.bg2 .shida .txt {
+    width: 50%;
+    height: 100%;
+}
+
+.bg2 .shida .imgebi .smal {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg2 .shida .imgebi .smal .card {
+    width: 70%;
+    height: 50%;
+    border-radius: 120px;
+}
+
+.bg2 .shida .imgebi .smal .card img {
+    border-radius: 120px;
+}
+
+.bg2 .shida .imgebi .big {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg2 .shida .imgebi .big .card {
+    width: 70%;
+    height: 70%;
+    border-radius: 120px;
+}
+
+.bg2 .shida .imgebi .big .card img {
+    border-radius: 120px;
+}
+
+.bg2 .shida .txt .txt1 {
+    width: 125px;
+    height: 25px;
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.bg2 .shida .txt h1 {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.bg2 .shida .txt h1 span {
+    color: var(--main-color);
+}
+
+.bg2 .shida .txt .p1 {
+    color: #4d5756;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 25px;
+}
+
+.bg2 .shida .txt .book {
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+}
+
+.bg2 .shida .txt .book .card {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bg2 .shida .txt .book .card .kubo {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.bg2 .shida .txt .book .card .txt2 {
+    width: 80%;
+    height: 100%;
+}
+
+.bg2 .shida .txt .book .card .txt2 h3 {
+    font-size: 20px;
+}
+
+.bg2 .shida .txt .book .card .txt2 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 10px;
+    color: #333931;
+}
+
+.bg2 .shida .txt button {
+    width: 250px;
+    height: 65px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    margin: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bg2 .shida .txt button:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.bg6 {
+    width: 75%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0AB99D;
+    margin-top: 200px;
+}
+
+.bg6 .book {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg6 .book .kubi {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+
+}
+
+.bg6 .book h1 {
+    font-size: 40px;
+}
+
+.bg6 .book p {
+    font-size: 15px;
+}
+
+.bg33 {
+    width: 100%;
+    height: 600px;
+    margin-top: 200px;
+}
+
+.bg33 .shida {
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+
+.bg33 .shida .txt {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg33 .shida .txt .txt1 {
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.bg33 .shida .txt .isr {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg33 .shida .txt .isr .kubo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.bg33 .shida .txt .isr .kubo:hover{
+    background-color: black;
+    transition: 0.3s
+}
+
+.bg33 .shida .main {
+    width: 100%;
+    height: 70%;
+    margin-top: 80px;
+    background-color: #0E2A46;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.bg33 .shida .main .imigebi {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg33 .shida .main .imigebi img {
+    border-radius: 50%;
+}
+
+.bg33 .shida .main .txt2 {
+    width: 70%;
+    height: 300px;
+}
+
+.bg33 .shida .main .bolo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 50px;
+}
+
+.bg33 .shida .main .txt2 h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.bg33 .shida .main .txt2 h4 {
+    color: var(--main-color);
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.bg33 .shida .main .txt2 p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.bg3 {
+    width: 100%;
+    height: 1250px;
+    background-image: url(image/bg2.jpg);
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 .txt {
+    width: 30%;
+    height: 150px;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bg3 .txt p {
+    width: 200px;
+    height: 30px;
+    color: #0b8873;
+    background-color: #02ffd5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg3 .txt h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.bg3 .book {
+    width: 85%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bg3 .book .card {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.bg3 .book .card img {
+    margin: 2.5% 0px 0px 2.5%;
+    border-radius: 20px;
+}
+
+.bg3 .book .card::before {
+    content: "Development";
+    background-color: #07b99c;
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.bg3 .book .card .star {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5% 0px 0px 2.5%;
+}
+
+.bg3 .book .card .star p {
+    color: #0b8873;
+    font-weight: bold;
+}
+
+.bg3 .book .card .txt1 {
+    width: 75%;
+    height: 75px;
+    margin: 2.5% 0px 0px 2.5%;
+}
+
+.bg3 .book .card .txt1 h1 {
+    font-size: 25px;
+}
+
+.bg3 .book .card .book1 {
+    width: 95%;
+    height: 50px;
+    margin: 2.5% 0px 0px 2.5%;
+    border-bottom: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg3 .book .card .book1 .card1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.bg3 .book .card .tech {
+    margin: 2.5% 0px 0px 2.5%;
+    width: 60%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: bold;
+}
+
+.bg3 .book .card .tech img {
+    border-radius: 50%;
+}
+
+.bg3 .book .card .tech p {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.bg3 .book .card .price {
+    width: 95%;
+    height: 50px;
+    margin: 2.5% 0px 0px 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg3 .book .card .price .half, .half1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bg3 .book .card .price .half p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bg3 .book .card .price .half1 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.bg3 button {
+    width: 250px;
+    height: 75px;
+    background-color: #14b69b;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bg3 button:hover {
+    background-color: #087462;
+    transition: 0.4s;
+    scale: 1.1;
+}
+
+footer {
+    width: 100%;
+    height: 900px;
+    margin-top: 300px;
+}
+
+footer .zeda {
+    width: 100%;
+    height: 300px;
+    background-color: var(--main-color);
+}
+
+footer .shua {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .qveda {
+    width: 100%;
+    height: 100px;
+    background-color: #333931;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .zeda .shida {
+    width: 1350px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+footer .zeda .shida .txt {
+    width: 600px;
+    height: 125px;
+}
+
+footer .zeda .shida .txt h1 {
+    font-size: 45px;
+    color: white;
+}
+
+footer .zeda .shida .txt p {
+    margin-top: 25px;
+    color: white;
+    font-size: 23px;
+}
+
+footer .zeda .shida .inputebi {
+    width: 600px;
+    display: flex;
+}
+
+footer .zeda .shida input {
+    width: 500px;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+footer .zeda .shida button {
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .shua .shida {
+    width: 1350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .shua .shida .card {
+    width: 20%;
+    height: 70%;
+}
+
+footer .shua .shida .didi {
+    width: 27.5%;
+    height: 70%;
+}
+
+footer .shua .shida .didi h1 {
+    color: white;
+}
+
+footer .shua .shida .didi p {
+    color: white;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+footer .shua .shida .didi .book {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+footer .shua .shida .didi .book .wre {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .shua .shida .didi .book .wre:hover {
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+
+footer .shua .shida .card h1 {
+    color: white;
+    font-size: 25px;
+}
+
+footer .shua .shida .card .block {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .shua .shida .card .block .paper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer .shua .shida .card .block .paper p {
+    margin-left: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .shua .shida .card .block .paper p:hover{
+    border-bottom: 2px solid white;
+}
+
+footer .shua .shida .didi .book1 {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .shua .shida .didi .book1 .column {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .shua .shida .didi .book1 .column .row {
+    width: 31%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer .shua .shida .didi .book1 .column .row img {
+    border-radius: 10px;
+}
+
+footer .qveda p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+footer .qveda p span {
+    color: var(--main-color);
+}
+
+@media only screen and (max-width: 1470px) {
+    nav {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    nav .nav2 .book1 h1 {
+        display: none;
+    }
+
+    nav .nav1 .book1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    nav .nav1 .book2 {
+        display: none;
+    }
+
+    .bg2 .shida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg2 .shida .imgebi {
+        width: 80%;
+    }
+
+    .bg2 .shida .txt {
+        width: 80%;
+    }
+
+    .bg6 {
+        margin-top: 800px;
+    }
+
+    .bg3 .txt {
+        margin: 0;
+    }
+
+    .bg3 .book {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .bg33 .shida {
+        width: 100%;
+    }
+
+    .bg4 {
+        background: black;
+        height: 1500px;
+    }    
+
+    .bg4 .shida {
+        width: 100%;
+    }
+
+    .bg4 .shida .book {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bg5 {
+        margin-top: 3000px;
+    }
+
+    footer .zeda {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1038px) {
+    nav .nav1 .book1 {
+        display: none;
+    }
+    
+    .bg6 {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .bg3 {
+        background:none
+    }
+
+    .bg3 .book {
+        display: block;
+    }
+
+    .bg3 button {
+        display: none;
+    } 
+
+    .bg3 .book .card {
+        width: 70%;
+        margin-left: 15%;
+        box-shadow: 0px 0px 24px 20px var(--main-color);
+        margin-top: 50px;
+    }
+
+    .bg4 {
+        margin-top: 1200px;
+    }
+    
+    footer {
+        margin-top: 1200px;
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 838px) {
+    nav .nav1 {
+        display: none;
+    }
+
+    nav .nav2 .book1 {
+        display: none;
+    }
+
+    nav .nav2 .book3 {
+        display: none;
+    }
+    
+    nav .nav2 .book2 ul .dropdown:hover .dropdown1  {
+        display: none;
+    }
+
+    nav .nav2 .book2 {
+        width: 100%;
+        height: 500px;
+        display: block;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    nav .nav2 .book2 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .g313 {
+        margin-top: 100px;
+    }
+
+    .cenc {
+        display: block;
+    }
+    
+    nav .otx {
+        visibility: visible;
+    }
+    
+    nav .otx button {
+        background: none;
+        border: none;
+    }
+
+    .bg6 {
+        display: none;
+    }
+
+    .bg4 .shida .txt {
+        width: 100%;
+    }
+
+    .bg33 {
+        margin-top: 900px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 616px) {
+
+    .bg33 .shida .txt {
+        display: none;
+    }
+
+    .bg4 {
+        height: 2500px;
+    }
+
+    .bg4 .shida .book .card {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}

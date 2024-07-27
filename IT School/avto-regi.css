@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #0AB99D;
+    --main-text-color: #333931;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#0AB99D, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg1 .shua {
+    width: 500px;
+    height: 500px;
+    background-color: #0c6153;
+    position: relative;
+    z-index: 1;
+}
+
+.bg1 .shua::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: -90px;
+    top: -100px;
+    background: linear-gradient(#1845ad,#23a2f6);
+}
+
+.bg1 .shua::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 390px;
+    top: 390px;
+    background: linear-gradient(to right, #ff512f,#f09819);
+    z-index: -2;
+}
+
+.bg1 .shua .txt {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.bg1 .shua .txt h1 {
+    color: white;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.bg1 .shua .txt h1 span {
+    color: white;
+    font-size: 30px;
+}
+
+.bg1 .shua .butonebi {
+    width: 100%;
+    height: 250px;
+    margin-top: 5%;
+}
+
+.bg1 .shua a button {
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+    background: linear-gradient(45deg, blue, white, #0AB99D );
+    margin-top: 5%;
+    color: black;
+    border: none;
+}
+
+@media only screen and (max-width: 720px) {
+    .bg1 .shua::after {
+        display: none;
+    }
+
+    .bg1 .shua::before {
+        display: none;
+    }
+}

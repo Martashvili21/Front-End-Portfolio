@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #f36100;
+    --main-bg-color: #0a0a0a;
+    --second-bg-color: #272626;
+    --second-color: #a9a9a9;
+}
+
+body {
+    background: #151515;;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background: linear-gradient(90deg black);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav .otx {
+    width: 50px;
+    height: 50px;
+    background: #363636;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+nav .otx #icone {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.nav2 {
+    width: 60%;
+    height: 100%;
+}
+
+.nav2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2 ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav2 ul li a:hover{
+    color: #f36100;
+    transition: 0.2s;
+}
+
+.nav3 {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ic1 {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.xazi {
+    width: 2px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+.bg1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(image/contactbg1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1 .txt {
+    width: 400px;
+    height: 115px;
+}
+
+.bg1 .txt h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bg1 .txt p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bg1 .txt p span {
+    color: var(--main-color);
+}
+
+.bg2 {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg2 .txt p {
+    color: var(--main-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.bg2 .txt h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.bg2 .book {
+    width: 65%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+
+}
+
+.bg2 .item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+
+}
+
+.bg2 .wre {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.bg2 #ic {
+    font-size: 40px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.bg2 .item h1 {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.bg2 .item p {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.bg2 .item:hover {
+    scale: 1.2;
+}
+
+.bg2 .item:hover .wre {
+    background-color: var(--main-color);
+    box-shadow:  0 0 15px 15px white;
+}
+
+.bg2 .item:hover .wre #ic {
+    color: white;
+}
+
+
+.bg3 {
+    width: 95%;
+    height: 700px;
+    display: flex;
+    margin-left: 2.5%;
+    margin-top: 50px;
+
+}
+
+.bg3 .yoga {
+    background-image: url(image/yoga.avif);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg3 .yoga .wre {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg3 .yoga .wre #icone {
+    font-size: 30px;
+    color: white;
+}
+
+.bg3 .item {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg3 .item .shida {
+    width: 85%;
+    height: 60%;
+}
+
+.bg3 .item  .shida h2 {
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bg3 .item .shida h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.bg3 .item  .shida p {
+    font-weight: 400;
+    line-height: 24px;
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.bg3 .item .shida .shida2 {
+    width: 100%;
+    height: 60%;
+}
+
+.bg3 .item .shida .shida2 .item {
+    width: 100%;
+    height: 33%;
+    display: block;
+}
+
+.bg3 .item .shida .shida2 .item .zeda, .qveda {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg3 .item .shida .shida2 .item .zeda p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bg3 .item .shida .shida2 .item .qveda .xazi1 {
+    width: 65%;
+    height: 20%;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.bg3 .item .shida .shida2 .item .qveda .xazi2 {
+    width: 45%;
+    height: 20%;
+    border: 3px solid #363636;
+    background-color: #363636;
+}
+
+.garetxt2 {
+    width: 100%;
+    height: 100px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.garetxt2 .txt {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txtshida {
+    height: 100%;
+}
+
+.garetxt2 .txtshida p {
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.garetxt2 .txtshida h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.garetxt2 button {
+    width: 170px;
+    height: 55px;
+    border: 2px solid var(--main-color);
+    background: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.garetxt2 button:hover {
+    background-color: var(--main-color);
+}
+
+.garebook3 {
+    width: 70%;
+    height: 450px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.garebook3 .item {
+    width: 30%;
+    height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.garebook3 .item:hover {
+    scale: 1.1;
+    box-shadow: 0 0 14px 7.5px white;
+}
+
+.bg4 {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.bg4 .main {
+    width: 1120px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg4 .main h1 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bg4 .main p {
+    font-size: 20px;
+    color: #636060;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.bg4 button {
+    width: 170px;
+    height: 55px;
+    background: none;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.bg4 img {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg4 button:hover {
+    background: var(--main-color);
+}
+
+.bg5 {
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bg5 h3 {
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.bg5 h1 {
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bg5 .img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bg5 .img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.bg5 .txt {
+    width: 70%;
+    height: 250px;
+    margin: auto;
+}
+
+.bg5 .txt p {
+    color: #cccccc;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+.bg5 .txt h2 {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 25px;
+}
+
+.bg5 .txt .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.cenc {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: var(--main-color);
+    font-size: 30px;
+    display: none;
+}
+
+.fot1 {
+    width: 100%;
+    height: 150px;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+}
+
+.fot2 {
+    width: 100%;
+    height: 350px;
+    background: black;
+}
+
+.fot1 .center {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot1 .center .item {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fot1 .center .item .wre {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot1 .center .item .wre #icon {
+    color:white;
+    font-size: 30px;
+}
+
+.fot1 .center .item p {
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.fot2 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.fot2 .center {
+    width: 60%;
+    height: 100%;
+}
+
+.fot2 .center .zeda {
+    width: 100%;
+    height: 218px;
+    border-bottom: 1px solid #272626;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot2 .center .zeda .bigitem {
+    width: 45%;
+    height: 100%;
+}
+
+.fot2 .center .zeda .item {
+    width: 25%;
+    height: 100%;
+}
+
+.fot2 .center .zeda .bigitem p {
+    font-size: 1vw;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 50px;
+}
+
+.fot2 .center .zeda .item h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.fot2 .center .zeda .item p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 30px;
+}
+
+.fot2 .center .qveda {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.fot2 .center .qveda p {
+    text-align: center;
+    font-size: 14px;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.fot2 .center .qveda p span {
+    color: var(--main-color);
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .fot1 .center {
+        width: 90%;
+    }
+
+    .fot2 .center {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 929px) {
+    nav img, .nav3 {
+        display: none;
+    }
+    
+    nav .nav2 {
+        width: 100%;
+    }
+
+    .bg2 .book {
+        flex-wrap: wrap;
+        height: 500px;
+        width: 90%;
+    }
+    
+    .bg2 .book .item h1 {
+        font-size: 2.5vw;
+    }
+
+    .bg2 .book .item p {
+        font-size: 2vw;
+    }
+
+    .bg3 {
+        display: inline-block;
+        margin-top: 200px;
+    }
+
+    .bg3 .yoga {
+        width: 100%;
+    }
+
+    .bg3 .item {
+        width: 100%;
+    }
+
+    .garetxt2 {
+        margin-top: 600px;
+    }
+
+    
+}
+
+@media screen and (max-width: 886px) {
+    footer .fot1 .center {
+        width: 90%;
+        display: block;
+        height: 350px;
+    }
+
+    footer .fot1 .center .item {
+        width: 70%;
+        height: 100px;
+    }
+
+    footer .fot2 .center {
+        width: 90%;
+        margin-top: 300px;
+    }
+
+    footer .fot2 .center .zeda .bigitem p {
+        font-size: 2vw;
+        line-height: 18px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 592px) {
+    .bg2 .book .item h1 {
+        font-size: 18px;
+    }
+    
+    .bg2 .book .item p {
+        font-size: 12px;
+    }
+    
+    .garetxt2 .txt {
+        width: 95%;
+    }
+
+    .garebook3 {
+        width: 95%;
+    }
+
+    .garebook3 .item {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    nav img, .nav3 {
+        display: none;
+    }
+    nav .otx {
+        visibility: visible;
+    }
+
+    nav .nav2 {
+        background-color: var(--main-color);
+        z-index: 1;
+        height: 550px;
+        margin-top: -50px;
+    }
+
+    nav .nav2 ul li a {
+        color: black;
+    }
+
+    .cenc {
+        display: block;
+    }
+
+    nav .nav2 ul {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        flex-direction: column;
+    }
+
+    .bg2 .book {
+        width: 90%;
+        display: block;
+        z-index: 1;
+    }
+    
+    .bg2 .book .item {
+        width: 75%;
+        margin-top: 50px;
+        margin-left: 13%;
+    }
+
+    .bg2 .book .item h1 {
+        font-size: 5vw;
+    }
+
+    .bg2 .book .item p {
+        font-size: 3.5vw;
+    }
+
+    .bg3 {
+        display: inline-block;
+        margin-top: 1000px;
+    }
+
+    .bg3 .yoga {
+        width: 100%;
+    }
+
+    .bg3 .item {
+        width: 100%;
+    }
+
+    .garetxt2 {
+        margin-top: 700px;
+    }
+
+    .garebook3 {
+        width: 90%;
+        display: block;
+    }
+
+    .garebook3 .item {
+        width: 100%;
+    }
+
+    .bg4 {
+        margin-top: 1100px;
+    }
+
+    .bg4 .main h1 {
+        font-size: 7vw;
+    }
+
+    .bg4 .main p {
+        font-size: 5vw;
+    }
+
+    .bg5 h3 {
+         font-size: 7vw;
+    }
+
+    .bg5 h1 {
+        font-size: 8vw;
+    }
+
+    footer {
+        display: block;
+        margin-top: 400px;
+    }
+
+    footer .fot1 .center {
+        width: 90%;
+        display: block;
+    }
+
+    footer .fot1 .center .item {
+        width: 100%;
+    }
+
+    footer .fot1 .center .item p {
+        font-size: 3vw;
+    }
+    
+    footer .fot2 .center {
+        width: 90%;
+        margin-top: 500px;
+    }
+
+    footer .fot2 .center .zeda {
+        display: block;
+    }
+
+    footer .fot2 .center .zeda .bigitem p {
+        font-size: 2vw;
+    }
+
+    footer .fot2 .center .qveda {
+        margin-top: 450px;
+    }
+}

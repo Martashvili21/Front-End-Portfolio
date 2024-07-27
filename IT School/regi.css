@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #0AB99D;
+    --main-text-color: #333931;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0AB99D, white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bg1 .shua {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 5px;
+    border: 3px solid rgba(255, 255, 255, 0.74);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 75px;
+    right: 55%;
+    background: linear-gradient(#1845ad6e,#23a2f6);
+    z-index: 3;
+}
+
+.bg1::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 55%;
+    bottom: 75px;
+    background: linear-gradient(to right, #ff522f98,#f09819);
+}
+
+.bg1 .shua h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.bg1 .shua .shida {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg1 .shua label {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.bg1 .shua .shida input {
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.bg1 .shua .shida input::placeholder {
+    color: black;
+}
+
+.bg1 .shua button {
+    width: 300px;
+    height: 60px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: linear-gradient(45deg, #0AB99D, white);
+}
+
+.not {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 410px;
+}
+
+.emaileror {    
+    position: absolute;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+#ernick {
+    position: absolute;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+#enterpass {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 454px) {
+    .bg1::after {
+        display: none;
+    }
+
+    .bg1::before {
+        display: none;
+    }
+}

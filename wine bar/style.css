@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #b28e65;
+}
+
+a {color: black;}
+
+.bg1 {
+    width: 100%;
+    height: 1100px;
+    background-image: url(image/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -50px;
+}
+
+.bg1 .txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.bg1 .txt nav {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    z-index: 5;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.btnbar {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    margin:auto;
+    background-color: var(--main-color);
+    display: none;
+}
+
+.bg1 .txt nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bg1 .txt nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.bg1 .txt nav ul li a:hover {
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.btnx {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid black;
+    display: none;
+}
+
+@media only screen and (max-width: 654px) {
+    .bg1 .txt nav {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .bg1 .txt nav ul {
+        display: none;
+        width: 260px;
+        height: 700px;
+        margin: auto; 
+        background-color: rgba(0, 0, 0, 0.658);  
+    }
+
+    .bg1 .txt nav ul li{
+        margin-top: 50px;
+        font-size: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -35px auto;
+        border-bottom: 1px solid rgb(121, 121, 121);
+    }
+
+    .bg1 .txt nav ul li a {
+        font-size: 17px;
+    }
+
+    .bg1 .txt nav .btnbar {
+        display: block;
+    }
+
+    .btnx {
+        display: none;
+    }
+}
+
+.bg1 .txt .shidatxt {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bg1 .txt .shidatxt p {
+    font-size: 23px;
+    font-weight: 550;
+    color: white;
+    font-family: 'Cinzel', serif;
+    margin-top: 50px;
+}
+
+.bg1 .txt .shidatxt h1 {
+    font-size: 130px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.bg1 .txt .shidatxt button {
+    width: 175px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.bg1 .txt .shidatxt button:hover {
+    background-color: var(--main-color);
+    transition: 0.2s;
+    color: white;
+}
+
+.bg2 {
+    width: 100%;
+    height: 800px;
+    background-image: url(image/bg2.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    float: left;
+    background-image: url(image/bg2befor.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.1;
+    height: 100%;
+}
+
+.bg2 .txt {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    
+}
+
+.bg2 .txt p {
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.bg2 .txt h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 90px;
+}
+
+.bg2 .txt h2 {
+    margin-top: 50px;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+}
+
+.bg2 .txt h6 {
+    margin-top: 30px;
+    color: white;
+    font-family: 'Cinzel', serif;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.bg2 .txt button {
+    width: 175px;
+    height: 50px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.bg2 .txt button a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.bg3 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+}
+
+.bg3 .wine {
+    width: 50%;
+    height: 100%;
+    background-image: url(image/bg3wine.jpg);
+}
+
+.bg3 .wine .txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg3 .wine .txt:hover {
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: 0.3s;
+}
+
+.bg3 .wine .txt .shidatxt {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+}
+
+.bg3 .wine .txt .shidatxt h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.bg3 .wine .txt .shidatxt h3 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.bg3 .wine .txt .shidatxt button {
+    width: 175px;
+    height: 50px;
+    border: none;
+    background: var(--main-color);
+    margin-top: 50px;
+}
+
+.bg3 .wine .txt .shidatxt button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bg3 .food {
+    width: 50%;
+    height: 100%;
+    background-image: url(image/bg3food.jpg);
+}
+
+.bg3 .food .txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg3 .food .txt:hover {
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: 0.3s;
+}
+
+.bg3 .food .txt .shidatxt {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+}
+
+.bg3 .food .txt .shidatxt h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.bg3 .food .txt .shidatxt h3 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.bg3 .food .txt .shidatxt button {
+    width: 175px;
+    height: 50px;
+    border: none;
+    background: white;
+    margin-top: 50px;
+}
+
+.bg3 .food .txt .shidatxt button a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bg4 {
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(253, 249, 242);
+}
+
+.bg4 .shida {
+    width: 70%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto ;
+}
+
+.bg4 .shida .txt {
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.bg4 .shida .txt h1 {
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+}
+
+.bg4 .shida .book {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg4 .shida .book .card {
+    width: 24.5%;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.bg4 .shida .book .card h4 {
+    font-size: 22px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid var(--main-color);
+    font-family: 'Cinzel', serif;
+}
+
+.bg4 .shida .book .card h1 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.bg4 .shida .book .card:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.bg4 .shida button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 1px solid var(--main-color);
+}
+
+.bg4 .shida button a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bg4 .shida button:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.3s;
+}
+
+.bg4 .shida button:hover  a {
+    color: white;
+    transition: 0.3s;
+}
+
+.bg5 {
+    width: 100%;
+    height: 1000px;
+    
+    background-color: rgb(247, 235, 214);
+}
+
+.bg5 .shida {
+    width: 60%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+.bg5 .shida .txt {
+    text-align: center;
+    width: 500px;
+    height: 150px;
+}
+
+.bg5 .shida .txt h1 {
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+}
+
+.bg5 .shida .book {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg5 .shida .book .card {
+    width: 33%;
+    height: 100%;
+    background: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    outline: none;
+}
+
+.bg5 .shida .book .card .shidatxt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.bg5 .shida .book .card .shidatxt h2 {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Cinzel', serif; 
+}
+
+.bg5 .shida .book .card .shidatxt h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-family: 'Cinzel', serif; 
+}
+
+.bg5 .shida .book .card p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px; 
+}
+
+.bg5 .shida .book .card a {
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.bg6 {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg6 .txt {
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b28e65;
+    color: white;
+    justify-content: center;
+}
+
+.bg6 .txt .xazi {
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.bg6 .txt h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+}
+
+.bg6 .txt .wre {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    border: 1px solid white;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.bg6 .txt .wre:hover {
+    background-color: white;
+    color: var(--main-color);
+    transition: 0.1s;
+}
+
+.bg7 {
+    width: 100%;
+    height: 850px;
+    background-color: rgb(247, 235, 213);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg7 .txt {
+    width: 650px;
+    height: 200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.bg7 .txt h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 70px;
+    width: 70%;
+    margin: auto;
+}
+
+.bg7 .txt p {
+    color: var(--main-color);
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.bg7 .book {
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.bg7 .book .card {
+    width: 19.5%;
+    height: 100%;
+}
+
+.bg7 .book .bgblack {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    position: relative;
+    cursor: pointer;
+}
+
+.bg7 .book .c1 {
+    background-image: url("image/outlets1.jpg");
+}
+
+.bg7 .book .c2 {
+    background-image: url("image/outlets2.jpg");
+}
+
+.bg7 .book .c3 {
+    background-image: url("image/outlets3.jpg");
+}
+
+.bg7 .book .c4 {
+    background-image: url("image/outlets4.jpg");
+}
+
+.bg7 .book .c5 {
+    background-image: url("image/outlets5.jpg");
+}
+
+.bg7 .book .card .bgblack .txt1{
+    width: 80%;
+    height: 180px;
+    position: absolute;
+    font-size: 10px;
+    margin:320px 20px;
+}
+
+.bg7 .book .card .bgblack .txt1 h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.bg7 .book .card .bgblack:hover {
+    background: none;
+    transition: 0.3s;
+}
+
+.bg8 {
+    width: 100%;
+    height: 650px;
+    background-image: url(image/bg8.jpg);
+    background-attachment: fixed;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg8 .blackdiv {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.bg8 .blackdiv .txt {
+    width: 800px;
+    height: 500px;
+    margin: auto auto;
+    text-align: center;
+    color: white;
+}
+
+.bg8 .blackdiv .txt .xazi {
+    width: 50px;
+    height: 3px;
+    border: 2.5px solid white;
+    background-color: white;
+    margin: auto;
+}
+
+.bg8 .blackdiv .txt h1 {
+    font-size: 100px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.bg8 .blackdiv .txt p {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+
+.bg8 .blackdiv .txt .butonebi {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.bg8 .blackdiv .txt .butonebi button {
+    width: 49%;
+    height: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn1 {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+.bg8 .blackdiv .txt .butonebi .btn1:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn2 {
+    background-color: white;
+}
+
+.bg8 .blackdiv .txt .butonebi .btn2:hover {
+    background-color: var(--main-color);
+    color: black;
+    transition: 0.3s;
+}
+
+
+.bg8 .blackdiv .txt .butonebi .btn2:hover a {
+    color: white;
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    height: 580px;
+    background-image: url(image/footerbg.jpg);
+}
+
+footer .txt {
+    width: 200px;
+    height: 200px;
+    margin: 125px auto;
+    text-align: center;
+    color: rgb(100, 99, 99);
+}
+
+footer .txt p {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+footer .txt .book {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+footer .txt .book .card {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .qveda {
+    width: 100%;
+
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+footer .qveda p {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(139, 139, 139);
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .bg4 {
+        height: 1500px;
+    }
+    
+    .bg4 .shida {
+        width: 100%;
+        margin: 50px auto;
+        height: 100%;
+    }
+
+    .bg4 .shida .book {
+        flex-wrap: wrap;
+        margin: 50px auto;
+    }
+
+    .bg4 .shida .book .card {
+        width: 270px;
+    }
+
+    .bg4 .shida button {
+        margin-top: 500px;
+    }
+
+    .bg7 .book .card .bgblack .txt1 h1 {
+        font-size: 25px;
+    }
+
+    .bg5 .shida {
+        width: 100%;
+    }
+
+    .bg5 .shida .book {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .bg1 .txt .shidatxt h1 {
+        font-size: 15vw ;
+        margin-top: 100px;
+        width: 350px;
+        height: 500px;
+    }
+    
+    .bg1 .txt .shidatxt p {
+        display: none;
+    }
+
+    .bg8 .blackdiv .txt {
+        width: 100%;
+    }
+
+    .bg6 {
+        display: none;
+    }
+
+    .bg7 .txt {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .bg1 .txt .shidatxt h1 {
+        width: 350px;
+        height: 300px;
+    }
+
+    .bg2 .txt h1 {
+        font-size: 15vw;
+    }
+
+    .bg2 .txt h2 {
+        font-size: 5vw;
+    }
+
+    .bg2 .txt h6 {
+        font-size: 5vw;
+    }
+    
+    .bg4 {
+        height: 2500px;
+    }
+
+    .bg4 .shida .txt {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .bg4 .shida .book  .card{
+        width: 70%;
+        margin: auto;
+    }
+
+    .bg4 .shida button {
+        margin-top: 1500px;
+    }
+    .bg5 {
+        height: 3000px;
+    }
+
+    .bg5 .shida .txt {
+        width: 100%;
+    }
+
+    .bg5 .shida .book {
+        display: block;
+        margin-top: 200px;
+    }
+
+    .bg5 .shida .book .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bg8 {
+        height: 1000px;
+    }
+
+    footer {
+        display: none;
+    }
+} 
